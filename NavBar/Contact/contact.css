@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(255, 177, 163);
+} 
+.jumbotron {
+    background-color: rgb(255, 177, 163);
+  }
+  .copyable {
+    cursor: pointer;
+    color: #0059ff;
+    text-decoration: underline;
+  }
+
