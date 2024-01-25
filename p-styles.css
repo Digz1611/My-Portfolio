@@ -1,0 +1,17 @@
+
+.jumbotron {
+  background-color: #383859;
+}
+p {
+  font-family: 'Arial', sans-serif;
+  background-color: #4c00ff;
+  color: #00ff66;
+}
+
+body {
+    font-family: Verdana, Tahoma, sans-serif; 
+    background-color: #383859;   
+    color: #00ff66;                  
+    margin: 0;                
+    padding: 0;                  
+  }
