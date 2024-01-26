@@ -1,21 +1,27 @@
 function copyText(text) {
-    // Create a temporary textarea element
     var tempTextarea = document.createElement("textarea");
     tempTextarea.value = text;
 
-    // Append the textarea to the document
     document.body.appendChild(tempTextarea);
 
-    // Select the text in the textarea
     tempTextarea.select();
-    tempTextarea.setSelectionRange(0, 99999); /* For mobile devices */
+    tempTextarea.setSelectionRange(0, 99999);
 
-    // Copy the selected text
     document.execCommand("copy");
 
-    // Remove the temporary textarea from the document
     document.body.removeChild(tempTextarea);
 
-    // Optionally, provide feedback to the user
     alert("Text copied: " + text);
 }
+
+// Add event listeners to copyable elements
+document.addEventListener('DOMContentLoaded', function() {
+    var copyables = document.getElementsByClassName('copyable');
+    
+    for (var i = 0; i < copyables.length; i++) {
+        copyables[i].addEventListener('click', function() {
+            var textToCopy = this.textContent;
+            copyText(textToCopy);
+        });
+    }
+});
