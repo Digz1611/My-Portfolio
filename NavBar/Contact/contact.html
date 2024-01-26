@@ -10,20 +10,32 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
         .navbar {
-            margin-bottom: 0;
+            margin: 0;
             border-radius: 0;
-            width: 100%;
+        }
+
+        .jumbotron,
+        footer {
+            margin: 0;
+            padding: 20px; /* Adjust as needed */
         }
 
         footer {
             background-color: #000000;
-            padding: 25px;
             color: white;
         }
     </style>
+</head>
 
 <body>
+      <nav class="navigation">
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -46,96 +58,48 @@
             </div>
         </div>
     </nav>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
+    </nav>
 
-        h2 {
-            color: #333;
-        }
-
-        form {
-            max-width: 400px;
-            margin: 20px auto;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 8px;
-        }
-
-        input,
-        textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 16px;
-            box-sizing: border-box;
-        }
-
-        button {
-            background-color: #00ff0d;
-            color: #fff;
-            padding: 10px 15px;
-            border: none;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #00ff9d;
-        }
-    </style>
-    </head>
-
-    <body>
-
-
-        <div class="jumbotron">
-            <div class="container text-center">
-                <h1>Contact Information</h1>  
-                <p>
-                    There are a few ways in which you can contact me: <br>
-                    You can email <span class="copyable" onclick="copyText('diego.langeveldt@gmail.com')">diego.langeveldt@gmail.com</span> <br>
-                    or using the area below to quickly and easily send an email. <br>
-                    <br>
-                    Alternatively, you can send a message to this number: <br>
-                    <span class="copyable" onclick="copyText('(+27)65 941 5048')">(+27)65 941 5048</span> <br>
-                    or send a message on Discord to: <br>
-                    <span class="copyable" onclick="copyText('digz1611')">digz1611</span>
-                </p>    
-            </div>
-        </div>
-    
-        <script src="contact.js"></script>
-    </body>
-
-    <body>
-        <div class="jumbotron">
-            <div class="container text-center">
-        <h2>Contact Me Here:</h2>
-        <p>
-            If you want to email me immediately
-        </p>
-        <form action="https://formspree.io/f/mbjndarp" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Submit</button>
+    <div class="jumbotron">
+        <div class="container text-center">
+            <h1>Contact Information</h1>
+            <p>
+                There are a few ways in which you can contact me: <br>
+                You can email <span class="copyable" onclick="copyText('diego.langeveldt@gmail.com')">diego.langeveldt@gmail.com</span> <br>
+                or using the area below to quickly and easily send an email. <br>
+                <br>
+                Alternatively, you can send a message to this number: <br>
+                <span class="copyable" onclick="copyText('(+27)65 941 5048')">(+27)65 941 5048</span> <br>
+                or send a message on Discord to: <br>
+                <span class="copyable" onclick="copyText('digz1611')">digz1611</span>
+            </p>
         </div>
     </div>
 
-        
+    <div class="jumbotron">
+        <div class="container text-center">
+            <h2>Contact Me Here:</h2>
+            <p>
+                If you want to contact me immediately via email.
+            </p>
+            <form action="https://formspree.io/f/mbjndarp" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+<br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+<br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+<br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
 
     <footer>
         <div class="container text-center">
-            <p3>&copy; 2024 Diego's Portfolio. All rights reserved.</p>
+            <p>&copy; 2024 Diego's Portfolio. All rights reserved.</p>
         </div>
     </footer>
 </body>

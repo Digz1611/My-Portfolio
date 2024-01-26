@@ -1,0 +1,39 @@
+.paper-container {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin: 40%;
+    border: 1px solid #676767; /* Border for a paper-like appearance */
+    border-radius: 0; /* Rounded corners for a softer look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    max-width: 600px; /* Adjust the maximum width as needed */
+    text-align: left; /* Align text to the left for readability */
+  }
+
+  .jumbotron {
+    background-color: #383859;
+  }
+  p {
+    font-family: 'Arial', sans-serif;
+    background-color: #4c00ff;
+    color: #00ff66;
+  }
+
+  .navigation {
+    background-color: #252525; 
+    border: none; 
+    border-radius: 0; 
+  }
+  
+  .navigation .navbar-brand,
+  .navigation .nav > li > a {
+    color: #ffffff; 
+    transition: color 0.3s; 
+    text-decoration: none; 
+    cursor: pointer; 
+  }
+  
+  .navigation .navbar-brand:hover,
+  .navigation .nav > li > a:hover {
+    color: rgb(107, 32, 255); 
+    border-bottom: 2px solid rgb(107, 32, 255); 
+  }

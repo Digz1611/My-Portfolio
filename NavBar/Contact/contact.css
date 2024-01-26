@@ -4,9 +4,32 @@ body {
 .jumbotron {
     background-color: rgb(255, 177, 163);
   }
+
+button {
+    background-color: red;
+  } 
   .copyable {
     cursor: pointer;
     color: #0084ff;
     text-decoration: underline;
   }
 
+  .navigation {
+    background-color: #252525; 
+    border: none; 
+    border-radius: 0; 
+  }
+  
+  .navigation .navbar-brand,
+  .navigation .nav > li > a {
+    color: #ffffff; 
+    transition: color 0.3s; 
+    text-decoration: none; 
+    cursor: pointer; 
+  }
+  
+  .navigation .navbar-brand:hover,
+  .navigation .nav > li > a:hover {
+    color: rgb(107, 32, 255); 
+    border-bottom: 2px solid rgb(107, 32, 255); 
+  }
