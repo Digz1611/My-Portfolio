@@ -2,140 +2,86 @@
 <html lang="en">
 
 <head>
-    <title>About Me</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <style>
-        /* Remove the navbar's default margin-bottom and rounded borders */
-        .navbar {
-            margin-bottom: 0;
-            border-radius: 0;
-        }
+  <title>Diego's Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="about.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      width: 100%;
+    }
 
-        /* Add a gray background color and some padding to the footer */
-        footer {
-            background-color: #000000;
-             padding: 25px;
-             color: white;
-             text-align: center;
-             margin-top: auto;
-        }
-
-
-
-        /* Make the navbar fixed at the top */
-        .navbar-fixed-top {
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        /* Adjust body padding to account for fixed navbar */
-
-
-        header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
-
-        section {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #00ff48;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgb(255, 0, 0);
-        }
-
-        p {
-            line-height: 1.6;
-            margin-bottom: 15px;
-        }
-
-        strong {
-            color: #2200ffda;
-        }
-
-
-
-
-    </style>
+    footer {
+      background-color: #000000;
+      padding: 25px;
+      color: white;
+      text-align: center;
+      margin-top: auto;
+    }
+  </style>
 </head>
 
-<body onscroll="changeBackgroundColor()">
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Portfolio</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li ><a href="../../index.html">Home</a></li>
-                    <li class="active"><a href="navigatorBar/aboutme/aboutMe.html">About</a></li>
-                    <li><a href="../Contact/contact.html">Contact</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                </ul>
-            </div>
+<body>
+  <nav class="navigation">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Portfolio</a>
         </div>
-    </nav>
-
-
-
-    <section>
-      <div class="jumbotron">
-        <div class="container text-center">
-          <div class="paper-container">
-            <h1>About Me:</h1>
-            <h2>Experiences:</h2>
-            <h3>
-              
-              Embarking on my journey into programming, I've been dedicated to expanding my knowledge in the field, as
-              evidenced by the projects I've undertaken thus far. Prior to this, my exposure to programming was limited to the
-              fundamentals of HTML, which I learned furing my highschool career using Notepad++. <br>
-              This new venture has opened up a realm of possibilities for me. <br> 
-              I am currently <span id="age"></span> years old, I successfully completed my Matric in 2023 at an IEB (Independent Examinations Board) school, achieving a Bachelor's Degree.
-    <br>
-    <br>
-              <h2>Interests and hobbies:</h2>
-              <h3>
-                
-                Allow me to share a few facts of my personality and interests to get to know me better:
-                <br>
-                <br>
-                <ul>
-               <li> Actively pursuing knowledge and hands-on experience to strengthen my programming skills. </li>
-              <li>Automotive Passion: A profound love for combustion automobiles, with a particular aspiration to own luxury cars, notably a Porsche or two, or any performace sport/super car or super SUV. </li>
-              <li>  Interests: A self-proclaimed Star Wars enthusiast, adding a touch of nerdy fascination to my varied interests.</li>
-              </ul>
-                These aspects collectively contribute to a me being a well-rounded individual with a passion for technology, an aficionado, if you would
-                for refined performace cars, and a touch of nerdiness.
-                If you would like to learn more about me and my skillsets, feel free to <a href="../Contact/contact.html">contact</a> me.
-              </h3>
-          </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="../../index.html">Home</a></li>
+            <li class="active"><a href="NavBar/About/about.html">About</a></li>
+            <li><a href="../Contact/contact.html">Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
         </div>
       </div>
-    
-    </section>
+    </nav>
+  </nav>
 
-   
+  <div class="jumbotron">
+    <div class="container text-center">
+      <div class="paper-container">
+        <h1>About Me:</h1>
+        <h2>Experiences:</h2>
+        <h3>
+          Embarking on my journey into programming, I've been dedicated to expanding my knowledge in the field, as
+          evidenced by the projects I've undertaken thus far. Prior to this, my exposure to programming was limited to the
+          fundamentals of HTML, which I learned furing my highschool career using Notepad++. <br>
+          This new venture has opened up a realm of possibilities for me. <br> 
+          I am currently <span id="age"></span> years old, I successfully completed my Matric in 2023 at an IEB (Independent Examinations Board) school, achieving a Bachelor's Degree.
+<br>
+<br>
+          <h2>Interests and hobbies:</h2>
+          <h3>
+            
+            Allow me to share a few facts of my personality and interests to get to know me better:
+            <br>
+            <br>
+            <ul>
+           <li> Actively pursuing knowledge and hands-on experience to strengthen my programming skills. </li>
+          <li>Automotive Passion: A profound love for combustion automobiles, with a particular aspiration to own luxury cars, notably a Porsche or two, or any performace sport/super car or super SUV. </li>
+          <li>  Interests: A self-proclaimed Star Wars enthusiast, adding a touch of nerdy fascination to my varied interests.</li>
+          </ul>
+            These aspects collectively contribute to a me being a well-rounded individual with a passion for technology, an aficionado, if you would
+            for refined performace cars, and a touch of nerdiness.
+            If you would like to learn more about me and my skillsets, feel free to <a href="../Contact/contact.html">contact</a> me.
+          </h3>
+      </div>
+    </div>
   </div>
   <footer>
     <div class="container text-center">
@@ -144,24 +90,6 @@
   </footer>
 
   <script>
-    function changeBackgroundColor() {
-      // Get the scroll position
-      var scrollPosition = window.scrollY || document.documentElement.scrollTop;
-
-      // Calculate a darkness factor based on the scroll position
-      var darknessFactor = scrollPosition / 1; // You can adjust this value
-
-      // Limit the darkness factor to a maximum of 0.7
-      darknessFactor = Math.min(darknessFactor, 0.80);
-
-      // Calculate the grey value based on the darkness factor
-      var greyValue = 255 - (darknessFactor * 255);
-
-      // Set the background color with the calculated grey value
-      document.body.style.backgroundColor = 'rgb(${greyValue}, ${greyValue}, ${greyValue})';
-    }
-  </script>
-   <script>
     // Calculate and display age dynamically
     document.getElementById('age').innerText = calculateAge('2005/11/16');
 
@@ -176,7 +104,6 @@
                 currentDate.getDate() < birthDate.getDate())) {
             return age - 1;
         }
-
         return age;
     }
 </script>
