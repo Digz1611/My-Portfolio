@@ -1,6 +1,10 @@
-function copyText(text) {
+
+
+function copyText(encodedText) {
+    var decodedText = decodeURIComponent(encodedText);
+
     var tempTextarea = document.createElement("textarea");
-    tempTextarea.value = text;
+    tempTextarea.value = decodedText;
 
     document.body.appendChild(tempTextarea);
 
@@ -11,17 +15,5 @@ function copyText(text) {
 
     document.body.removeChild(tempTextarea);
 
-    alert("Text copied: " + text);
+    alert("Text copied: " + decodedText);
 }
-
-// Add event listeners to copyable elements
-document.addEventListener('DOMContentLoaded', function() {
-    var copyables = document.getElementsByClassName('copyable');
-    
-    for (var i = 0; i < copyables.length; i++) {
-        copyables[i].addEventListener('click', function() {
-            var textToCopy = this.textContent;
-            copyText(textToCopy);
-        });
-    }
-});
