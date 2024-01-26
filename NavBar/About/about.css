@@ -31,9 +31,7 @@ body {
   z-index: -1; /* Send it to the background */
 }
 
-section {
-  background-color: rgb(26, 163, 58);
-}
+
 
 p {
   font-family: 'Arial', sans-serif;
