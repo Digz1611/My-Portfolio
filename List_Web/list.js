@@ -1,6 +1,5 @@
 // Retrieve tasks from localStorage or initialize empty array
 const localTodoTasksArray = JSON.parse(localStorage.getItem("localTodoTasks")) || [];
-const sessionTodoTasksArray = JSON.parse(sessionStorage.getItem("sessionTodoTasks")) || [];
 
 const localTodosContainer = document.getElementById("local-storage-todos-container");
 const localInputEle = document.getElementById("local-storage-todo-input-ele");
@@ -8,14 +7,10 @@ const localAddTaskBtn = document.getElementById("local-storage-add-task-btn");
 
 const localRemoveTasksBtn = document.getElementById("local-storage-remove-task-btn");
 
-const sessionTodosContainer = document.getElementById("session-storage-todos-container");
-const sessionInputEle = document.getElementById("session-storage-todo-input-ele");
-const sessionAddTaskBtn = document.getElementById("session-storage-add-task-btn");
 
-// Function to update tasks in localStorage or sessionStorage
+// Function to update tasks in localStorage
 function updateStorageTasks() {
   localStorage.setItem("localTodoTasks", JSON.stringify(localTodoTasksArray));
-  sessionStorage.setItem("sessionTodoTasks", JSON.stringify(sessionTodoTasksArray));
 }
 
 // Function to create todo li elements
@@ -43,13 +38,10 @@ function createTodoLiElements(todoArray, sectionType) {
   });
 }
 
-// Display tasks from localStorage or sessionStorage on page load
+// Display tasks from localStorage on page load
 window.addEventListener("load", () => {
   const localTodoLiElements = createTodoLiElements(localTodoTasksArray, "local");
   localTodosContainer.append(...localTodoLiElements);
-
-  const sessionTodoLiElements = createTodoLiElements(sessionTodoTasksArray, "session");
-  sessionTodosContainer.append(...sessionTodoLiElements);
 });
 
 // Event listener to add task in Local section
@@ -64,17 +56,7 @@ localAddTaskBtn.addEventListener("click", () => {
   updateStorageTasks();
 });
 
-// Event listener to add task in Session section
-sessionAddTaskBtn.addEventListener("click", () => {
-  const newTodoInfo = { checked: false, text: sessionInputEle.value };
-  sessionTodoTasksArray.push(newTodoInfo);
 
-  const todoLiElements = createTodoLiElements(sessionTodoTasksArray, "session");
-  sessionTodosContainer.replaceChildren(...todoLiElements);
-
-  sessionInputEle.value = "";
-  updateStorageTasks();
-});
 
 /* Function to remove tasks but manily for the local storage */
 localRemoveTasksBtn.addEventListener("click", () => {
@@ -84,3 +66,4 @@ localRemoveTasksBtn.addEventListener("click", () => {
 });
 
 
+session

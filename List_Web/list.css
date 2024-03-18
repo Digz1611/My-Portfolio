@@ -20,10 +20,6 @@ section {
   background-color: #fcf2d5;
 }
 
-section:last-of-type {
-  background-color: rgb(250, 255, 213);
-}
-
 .content-container {
   padding-top: 1.17rem;
   padding-inline: 3.3rem;
