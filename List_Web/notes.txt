@@ -10,3 +10,7 @@ List:
 General:
  - use to neaten pages (Javascriptch/my_source_code/12_project_2.html)
  - change one of the games to (Javascriptch/my_source_code/12_project_3.html)
+ - find the hangman hame in (Javascriptch/my_source_code) and change this one
+
+
+ 
