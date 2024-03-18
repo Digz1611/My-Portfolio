@@ -1,6 +1,12 @@
-For Portfolio:
-1st of all, copy paste into new file area
- - remove the session 
+List:
  - change wording
  - change colouring
+ - change container with (Javascriptch/my_source_code/12_project_2.html)
+ - make it that you can change the page name depending on use
+ - make to export to txt
+ - make it own website and connect via hyperlink
  - anything else that comes to mind, (not extra unnessary things)
+
+General:
+ - use to neaten pages (Javascriptch/my_source_code/12_project_2.html)
+ - change one of the games to (Javascriptch/my_source_code/12_project_3.html)
