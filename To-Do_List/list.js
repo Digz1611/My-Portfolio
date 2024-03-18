@@ -1,11 +1,11 @@
 // Retrieve tasks from localStorage or initialize empty array
 const localTodoTasksArray = JSON.parse(localStorage.getItem("localTodoTasks")) || [];
 
-const localTodosContainer = document.getElementById("local-storage-todos-container");
-const localInputEle = document.getElementById("local-storage-todo-input-ele");
-const localAddTaskBtn = document.getElementById("local-storage-add-task-btn");
+const localTodosContainer = document.getElementById("todos-container");
+const localInputEle = document.getElementById("todo-input-ele");
+const localAddTaskBtn = document.getElementById("add-task-btn");
 
-const localRemoveTasksBtn = document.getElementById("local-storage-remove-task-btn");
+const localRemoveTasksBtn = document.getElementById("remove-task-btn");
 
 
 // Function to update tasks in localStorage
@@ -56,8 +56,6 @@ localAddTaskBtn.addEventListener("click", () => {
   updateStorageTasks();
 });
 
-
-
 /* Function to remove tasks but manily for the local storage */
 localRemoveTasksBtn.addEventListener("click", () => {
   localStorage.removeItem("localTodoTasks"); // Remove the specific item holding the tasks
@@ -65,5 +63,29 @@ localRemoveTasksBtn.addEventListener("click", () => {
   localTodosContainer.innerHTML = ''; // Clear the UI
 });
 
+function createTodoLiElements(todoArray, sectionType) {
+  // Sort the todoArray alphabetically by text
+  todoArray.sort((a, b) => a.text.localeCompare(b.text));
 
-session
+  return todoArray.map((todo, index) => {
+    const liElement = document.createElement("li");
+    const checkboxEle = document.createElement("input");
+    const labelEle = document.createElement("label");
+
+    checkboxEle.setAttribute("type", "checkbox");
+    checkboxEle.setAttribute("id", `${sectionType}-chbx-${index}`);
+    checkboxEle.checked = todo.checked;
+
+    labelEle.setAttribute("for", `${sectionType}-chbx-${index}`);
+    labelEle.textContent = todo.text;
+
+    checkboxEle.addEventListener("click", () => {
+      todo.checked = checkboxEle.checked;
+      labelEle.classList.toggle("todo-task-done");
+      updateStorageTasks();
+    });
+
+    liElement.append(checkboxEle, labelEle);
+    return liElement;
+  });
+}
