@@ -17,7 +17,7 @@ article {
 section {
   display: grid;
   grid-template-rows: 70% 30%;
-  background-color: #fcf2d5;
+  background-color: #fce296;
 }
 
 .content-container {
@@ -26,6 +26,16 @@ section {
   border-bottom: 3px solid rgb(107, 32, 255);
   overflow-y: scroll;
 }
+
+        /* Styling for the form */
+        .content-container {
+          max-width: 500px;
+          margin: 0 auto;
+          background-color: #fcf2d5;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
 
 p {
   font-size: 0.84rem;
