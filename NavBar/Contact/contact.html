@@ -24,7 +24,8 @@
         .jumbotron,
         footer {
             margin: 0;
-            padding: 20px; /* Adjust as needed */
+            padding: 20px;
+            /* Adjust as needed */
         }
 
         footer {
@@ -35,29 +36,29 @@
 </head>
 
 <body>
-      <nav class="navigation">
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="../../Random/random.html">Portfolio</a>
+    <nav class="navigation">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../Random/random.html">Portfolio</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../About/about.html">About</a></li>
+                        <li class="active"><a href="NavBar/Contact/contact.html">Contact</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li><a href="../../index.html">Home</a></li>
-                    <li><a href="../About/about.html">About</a></li>
-                    <li class="active"><a href="NavBar/Contact/contact.html">Contact</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+        </nav>
     </nav>
 
     <div class="jumbotron">
@@ -65,7 +66,8 @@
             <h1>Contact Information</h1>
             <p>
                 There are a few ways in which you can contact me: <br>
-                You can email <span class="copyable" onclick="copyText('diego.langeveldt%40gmail.com')">diego.langeveldt@gmail.com</span> <br>
+                You can email <span class="copyable"
+                    onclick="copyText('diego.langeveldt%40gmail.com')">diego.langeveldt@gmail.com</span> <br>
                 or using the area below to quickly and easily send an email. <br>
                 <br>
                 Alternatively, you can send a message to this number: <br>
@@ -74,7 +76,7 @@
                 <span class="copyable" onclick="copyText('digz1611')">digz1611</span> <br>
                 <br>
                 You could also view my <a href="https://github.com/Digz1611">GitHub</a> page for all future endeavours ☺
-                
+
             </p>
         </div>
     </div>
@@ -88,13 +90,13 @@
             <form action="https://formspree.io/f/mbjndarp" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
-<br>
+                <br>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-<br>
+                <br>
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
-<br>
+                <br>
                 <button type="submit">Submit</button>
             </form>
         </div>
@@ -102,7 +104,8 @@
 
     <footer>
         <div class="container text-center">
-            <p>&copy; 2024 Diego's Portfolio. All rights reserved.</p>
+            <p3><a href="https://github.com/Digz1611" class="white-text">&copy; 2024 Diego's Portfolio. All rights
+                    reserved.</a></p3>
         </div>
     </footer>
     <script src="contact.js"></script>

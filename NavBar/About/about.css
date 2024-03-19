@@ -49,3 +49,7 @@ p {
   color: rgb(107, 32, 255);
   border-bottom: 2px solid rgb(107, 32, 255);
 }
+
+.white-text {
+  color: white;
+}
