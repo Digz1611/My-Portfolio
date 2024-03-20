@@ -4,8 +4,9 @@
 }
 p {
   font-family: 'Arial', sans-serif;
-  background-color: #4c00ff;
-  color: #00ff66;
+  background-color: rgb(107, 32, 255);
+  color: #00ff73;
+  cursor: default;
 }
 
 body {
@@ -39,3 +40,7 @@ body {
 .white-text {
   color: white;
 }
+
+
+
+

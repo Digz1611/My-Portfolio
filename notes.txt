@@ -40,3 +40,17 @@ General:
             transition: 0.75s;
         }
     </style>
+
+
+    Footer styling:
+      <style>
+    footer {
+      border-top: 3px solid rgb(107, 32, 255);
+      background-color: black;
+    }
+  </style>
+  <footer>
+    <div class="container text-center">
+      <p3><a href="https://github.com/Digz1611" class="white-text">&copy; 2024 Diego's Portfolio. All rights reserved.</a></p3>
+    </div>
+  </footer>

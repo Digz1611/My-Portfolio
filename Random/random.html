@@ -8,16 +8,44 @@
 <body style="background-color: #f200ff;">
     <h1>You were already there, but while your here look at this cute kitty</h1>
 
-    <button id="homeButton"><a href="../index.html">Go to Home Page</a></button>
-
-
+    <button id="homeButton">Return Home</button>
+    <script>
+        document.getElementById('homeButton').addEventListener('click', () => {
+            window.location.href = href = "https://digz1611.github.io/My-Portfolio/";
+        });
+    </script>
     <style>
-        button {
-            background-color: #00ffc3;
-            color: #00ff66;
+        #homeButton {
+            background-color: rgb(107, 32, 255);
+            color: #00ff62;
+            text-align: center;
+            border: none;
+            border-top-right-radius: 22px;
+            border-bottom-right-radius: 22px;
+            border-top-left-radius: 22px;
+            border-bottom-left-radius: 22px;
+            cursor: pointer;
+        }
+    
+        #homeButton:hover {
+            background-color: #00ff73;
+            color: rgb(107, 32, 255);
+            transition: 0.75s;
         }
     </style>
     
-<img src="../Images/catcute.jpg" class="img-responsive" style="width:100%" alt="Image">
+<img src="catcute.jpg" class="img-responsive" style="width:100%" alt="Image">
+
+<style>
+    footer {
+      border-top: 3px solid rgb(107, 32, 255);
+      background-color: black;
+    }
+  </style>
+  <footer>
+    <div class="container text-center">
+      <p3><a href="https://github.com/Digz1611" class="white-text">&copy; 2024 Diego's Portfolio. All rights reserved.</a></p3>
+    </div>
+  </footer>
 </body>
 </html>
