@@ -25,6 +25,35 @@
     <div class="output"></div>
 
     <script src="Math_Game.js"></script>
+
+
+    <button id="homeButton">Return Home</button>
+    <script>
+        document.getElementById('homeButton').addEventListener('click', () => {
+            window.location.href = href = "https://digz1611.github.io/My-Portfolio/";
+        });
+    </script>
+    <style>
+        #homeButton {
+            background-color: rgb(107, 32, 255);
+            color: #00ff62;
+            text-align: center;
+            border: none;
+            border-top-right-radius: 22px;
+            border-bottom-right-radius: 22px;
+            border-top-left-radius: 22px;
+            border-bottom-left-radius: 22px;
+            cursor: pointer;
+        }
+    
+        #homeButton:hover {
+            background-color: #00ff73;
+            color: rgb(107, 32, 255);
+            transition: 0.75s;
+        }
+    </style>
+
+    
 </body>
 
 </html>

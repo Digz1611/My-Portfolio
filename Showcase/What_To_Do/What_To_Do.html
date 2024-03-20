@@ -16,20 +16,34 @@ Today Is:
 </div>
 <div id="thingToDo"></div>
     <script src="What_To_Do.js"></script>
-    <button id="homeButton">Go to Home Page</button>
 
+
+    <button id="homeButton">Return Home</button>
     <script>
-        // JavaScript code to handle the button click event
-        document.getElementById('homeButton').addEventListener('click', function () {
-            // Redirect to the home page
-            window.location.href = href = "../../index.html";  // Replace 'your_home_page.html' with the actual URL of your home page
+        document.getElementById('homeButton').addEventListener('click', () => {
+            window.location.href = href = "https://digz1611.github.io/My-Portfolio/";
         });
     </script>
     <style>
-        button {
-            background-color: #383859;
-            color: #00ff66;
+        #homeButton {
+            background-color: rgb(107, 32, 255);
+            color: #00ff62;
+            text-align: center;
+            border: none;
+            border-top-right-radius: 22px;
+            border-bottom-right-radius: 22px;
+            border-top-left-radius: 22px;
+            border-bottom-left-radius: 22px;
+            cursor: pointer;
+        }
+    
+        #homeButton:hover {
+            background-color: #00ff73;
+            color: rgb(107, 32, 255);
+            transition: 0.75s;
         }
     </style>
+
+    
 </body>
 </html>

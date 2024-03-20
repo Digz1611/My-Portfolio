@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Train Smash</title>
     <link rel="stylesheet" href="Train_Smash.css">
 </head>
+
 <body>
     <div id="container">
         <h1>Train Smash</h1>
         <p>
-            <ul>
-                <li>Click the train to make it go faster.</li>
-                <li>Click the Stop button to stop it.</li>
-                <li>Try to stop it as close to the edge as possible, without crashing.</li>
-            </ul>
+        <ul>
+            <li>Click the train to make it go faster.</li>
+            <li>Click the Stop button to stop it.</li>
+            <li>Try to stop it as close to the edge as possible, without crashing.</li>
+        </ul>
         </p>
         <div id="track">
             <div id="train">
@@ -24,20 +26,35 @@
         <div id="stopButton">Stop!</div>
     </div>
     <script src="Train_Smash.js"></script>
-    <button id="homeButton">Go to Home Page</button>
 
+    
+    <button id="homeButton">Return Home</button>
     <script>
-        // JavaScript code to handle the button click event
-        document.getElementById('homeButton').addEventListener('click', function () {
-            // Redirect to the home page
-            window.location.href = href = "../../index.html";  // Replace 'your_home_page.html' with the actual URL of your home page
+        document.getElementById('homeButton').addEventListener('click', () => {
+            window.location.href = href = "https://digz1611.github.io/My-Portfolio/";
         });
     </script>
     <style>
-        button {
-            background-color: #383859;
-            color: #00ff66;
+        #homeButton {
+            background-color: rgb(107, 32, 255);
+            color: #00ff62;
+            text-align: center;
+            border: none;
+            border-top-right-radius: 22px;
+            border-bottom-right-radius: 22px;
+            border-top-left-radius: 22px;
+            border-bottom-left-radius: 22px;
+            cursor: pointer;
+        }
+    
+        #homeButton:hover {
+            background-color: #00ff73;
+            color: rgb(107, 32, 255);
+            transition: 0.75s;
         }
     </style>
+
+
 </body>
+
 </html>
