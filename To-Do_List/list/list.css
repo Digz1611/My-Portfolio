@@ -3,22 +3,23 @@
 html,
 body,
 article {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
-  text-align: center;      
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
   width: 100%;
   height: 100%;
   margin: 0;
 }
+
 h1 {
   font-size: 0.75cm;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 article {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   font-family: 'Inter', sans-serif;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 section {
@@ -27,30 +28,33 @@ section {
   background-color: #fce296;
 }
 
-.content-container {
+input .content-container {
   padding-top: 1.17rem;
   padding-inline: 3.3rem;
 
   overflow-y: scroll;
 }
 
-        /* Styling for the form */
-        .content-container {
-          max-width: 500px;
-          margin: 0 auto;
-          background-color: #fcf2d5;
-          padding: 20px;
-          border-radius: 8px;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
+/* Styling for the form */
+.content-container {
+  max-width: 50%;
+  margin: 0 auto;
+  background-color: #fcf2d5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-p {
+input[type='text'] {
   font-size: 0.84rem;
-  border: 1px solid rgb(106, 32, 255);;
+  border: 1px solid rgb(107, 32, 255);
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.07);
   padding: 10px 15px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  width: 100%;
+  padding-block: 11px;
+  padding-inline: 22px 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 ul {
@@ -98,16 +102,17 @@ footer {
   border-top: 3px solid rgb(107, 32, 255);
 }
 
-input[type='text'] {
-  width: 45%;
-  padding-block: 11px;
-  padding-inline: 22px 10px;
+#add-task-btn {
+  margin-left: 5px;
+  padding: 11px 20px;
+  cursor: pointer;
+  background-color: #eabf9f;
   border-width: 0px;
   border-top-left-radius: 22px;
   border-bottom-left-radius: 22px;
 }
 
-button {
+#remove-all-btn {
   margin-left: 5px;
   padding: 11px 20px;
   cursor: pointer;
@@ -115,18 +120,6 @@ button {
   border-width: 0px;
   border-top-right-radius: 22px;
   border-bottom-right-radius: 22px;
-}
-
-#remove-task-btn {
-  margin-left: 5px;
-  padding: 11px 20px;
-  cursor: pointer;
-  background-color: #eabf9f;
-  border-width: 0px;
-  border-top-right-radius: 22px;
-  border-bottom-right-radius: 22px;
-  border-top-left-radius: 22px;
-  border-bottom-left-radius: 22px;
 }
 
 button:active {

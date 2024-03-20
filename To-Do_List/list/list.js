@@ -5,7 +5,7 @@ const localTodosContainer = document.getElementById("todos-container");
 const localInputEle = document.getElementById("todo-input-ele");
 const localAddTaskBtn = document.getElementById("add-task-btn");
 
-const localRemoveTasksBtn = document.getElementById("remove-task-btn");
+const localRemoveTasksBtn = document.getElementById("remove-all-btn");
 
 
 // Function to update tasks in localStorage
