@@ -1,17 +1,10 @@
-List:
- - change wording
- - change colouring
- - change container with (Javascriptch/my_source_code/12_project_2.html)
- - make it that you can change the page name depending on use
- - make to export to txt
- - make it own website and connect via hyperlink
- - anything else that comes to mind, (not extra unnessary things)
 
 General:
  - use to neaten pages (Javascript/my_source_code/ch12_project_2.html)
  - change one of the games to (Javascript/my_source_code/ch12_project_3.html)
  - find the hangman hame in (Javascript/my_source_code) and change this one
  - for contact use (Javascript/my_source_code/Project_3)
+ - change web link etc with (Unit_1/Lesson5/second_server/main.js)
 
  
  button to return home:
