@@ -5,14 +5,14 @@
 p {
   font-family: 'Arial', sans-serif;
   background-color: rgb(107, 32, 255);
-  color: #00ff73;
+  color: rgb(32, 255, 117);
   cursor: default;
 }
 
 body {
     font-family: Verdana, Tahoma, sans-serif; 
     background: #383859;  
-    color: #00ff66;                  
+    color: rgb(32, 255, 117);                  
     margin: 0;                
     padding: 0;                  
   }
