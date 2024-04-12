@@ -4,9 +4,12 @@ General:
  - find the hangman hame in (Javascript/my_source_code) and change this one
  - for contact use (Javascript/my_source_code/Project_3)
  - change web link etc with (unit_1/Lesson5/second_server/main.js)
- - use for the login (unit_5/lesson_25/finish/confetti_cuisine)
-
+ - use for the login (unit_6/lesson_28/finish)
+			OR
+ - use for the login (unit_6/lesson_29/finish)
  
+
+
  button to return home:
      <button id="homeButton">Return Home</button>
     <script>
